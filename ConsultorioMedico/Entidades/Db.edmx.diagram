@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b400d66fc6284f9ba8b3365e51b49545" Name="Diagram1">
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.DetalleCobro" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Doctores" Width="1.5" PointX="4.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Usuarios" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Consulta" Width="1.5" PointX="6.75" PointY="3.5" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Consulta_Doctores" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.rol" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Usuarios_rol" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Paciente" Width="1.5" PointX="2.625" PointY="12.5" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Cobranza" Width="1.5" PointX="6" PointY="9" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Cobranza_Doctores" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Cobranza_Paciente" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Cobranza_Usuarios" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_DetalleCobro_Cobranza" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Medicamento" Width="1.5" PointX="0.75" PointY="7" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_DetalleCobro_Medicamentos" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.FoliosConsultas" Width="1.5" PointX="3" PointY="6" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Folios_Usuarios_consulta" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Servicios" Width="1.5" PointX="6.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Turnos" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.FolioVenta" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_FolioVenta_Usuarios" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d7c38a9f98dc4c2fa2e03215e8062454" Name="Diagram1">
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Cobranza" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Consulta" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.DetalleCobro" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Doctores" Width="1.5" PointX="3.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Medicamentos" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Paciente" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConsultorioMedicoModel.Usuarios" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Cobranza_Paciente" ManuallyRouted="false" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Cobranza_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_DetalleCobro_Cobranza" ManuallyRouted="false" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Consulta_Doctores" ManuallyRouted="false" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_Consulta_Paciente" ManuallyRouted="false" />
+        <AssociationConnector Association="ConsultorioMedicoModel.FK_DetalleCobro_Medicamentos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
