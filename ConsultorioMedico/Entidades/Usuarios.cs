@@ -18,7 +18,6 @@ namespace ConsultorioMedico.Entidades
         public Usuarios()
         {
             this.Cobranza = new HashSet<Cobranza>();
-            this.FoliosConsultas = new HashSet<FoliosConsultas>();
             this.FolioVenta = new HashSet<FolioVenta>();
         }
     
@@ -31,12 +30,10 @@ namespace ConsultorioMedico.Entidades
         public string email { get; set; }
         public Nullable<int> idRol { get; set; }
     
-        public virtual rol rol { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cobranza> Cobranza { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FoliosConsultas> FoliosConsultas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FolioVenta> FolioVenta { get; set; }
+        public virtual rol rol { get; set; }
     }
 }

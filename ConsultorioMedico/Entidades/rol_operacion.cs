@@ -12,13 +12,13 @@ namespace ConsultorioMedico.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class Servicios
+    public partial class rol_operacion
     {
-        public int idServicio { get; set; }
-        public Nullable<decimal> codigoBarra { get; set; }
-        public string servicio { get; set; }
-        public string descripcion { get; set; }
-        public Nullable<decimal> dia { get; set; }
-        public Nullable<decimal> noche { get; set; }
+        public int id { get; set; }
+        public int idRol { get; set; }
+        public int idOperacion { get; set; }
+    
+        public virtual operaciones operaciones { get; set; }
+        public virtual rol rol { get; set; }
     }
 }

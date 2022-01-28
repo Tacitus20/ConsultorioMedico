@@ -17,8 +17,8 @@ namespace ConsultorioMedico.Entidades
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Doctores()
         {
-            this.Consulta = new HashSet<Consulta>();
             this.Cobranza = new HashSet<Cobranza>();
+            this.Consulta = new HashSet<Consulta>();
         }
     
         public int id { get; set; }
@@ -26,10 +26,11 @@ namespace ConsultorioMedico.Entidades
         public string Titulo { get; set; }
         public int CedProfesional { get; set; }
         public string Estudio { get; set; }
+        public string activo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Consulta> Consulta { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cobranza> Cobranza { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Consulta> Consulta { get; set; }
     }
 }

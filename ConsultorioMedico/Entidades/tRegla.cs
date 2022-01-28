@@ -12,25 +12,19 @@ namespace ConsultorioMedico.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class Paciente
+    public partial class tRegla
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Paciente()
+        public tRegla()
         {
-            this.Cobranza = new HashSet<Cobranza>();
+            this.tPerfiles = new HashSet<tPerfiles>();
         }
     
-        public int id { get; set; }
-        public string Nombre { get; set; }
-        public Nullable<int> Edad { get; set; }
-        public string Domicilio { get; set; }
-        public string Colonia { get; set; }
-        public string CodPost { get; set; }
-        public string Telefono { get; set; }
-        public string Rfc { get; set; }
-        public string email { get; set; }
+        public int IdRegla { get; set; }
+        public string Regla { get; set; }
+        public string Descripcion { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cobranza> Cobranza { get; set; }
+        public virtual ICollection<tPerfiles> tPerfiles { get; set; }
     }
 }

@@ -25,17 +25,27 @@ namespace ConsultorioMedico.Entidades
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Categoria> Categoria { get; set; }
+        public virtual DbSet<citas> citas { get; set; }
+        public virtual DbSet<Cobranza> Cobranza { get; set; }
+        public virtual DbSet<Consulta> Consulta { get; set; }
         public virtual DbSet<DetalleCobro> DetalleCobro { get; set; }
         public virtual DbSet<Doctores> Doctores { get; set; }
-        public virtual DbSet<Usuarios> Usuarios { get; set; }
-        public virtual DbSet<Consulta> Consulta { get; set; }
-        public virtual DbSet<rol> rol { get; set; }
-        public virtual DbSet<Paciente> Paciente { get; set; }
-        public virtual DbSet<Cobranza> Cobranza { get; set; }
-        public virtual DbSet<Medicamento> Medicamento { get; set; }
         public virtual DbSet<FoliosConsultas> FoliosConsultas { get; set; }
-        public virtual DbSet<Servicios> Servicios { get; set; }
-        public virtual DbSet<Turnos> Turnos { get; set; }
         public virtual DbSet<FolioVenta> FolioVenta { get; set; }
+        public virtual DbSet<Medicamento> Medicamento { get; set; }
+        public virtual DbSet<modulo> modulo { get; set; }
+        public virtual DbSet<operaciones> operaciones { get; set; }
+        public virtual DbSet<Paciente> Paciente { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Proveedor> Proveedor { get; set; }
+        public virtual DbSet<rol> rol { get; set; }
+        public virtual DbSet<rol_operacion> rol_operacion { get; set; }
+        public virtual DbSet<Servicios> Servicios { get; set; }
+        public virtual DbSet<Tomasignos> Tomasignos { get; set; }
+        public virtual DbSet<tPerfiles> tPerfiles { get; set; }
+        public virtual DbSet<tRegla> tRegla { get; set; }
+        public virtual DbSet<Turnos> Turnos { get; set; }
+        public virtual DbSet<Usuarios> Usuarios { get; set; }
     }
 }

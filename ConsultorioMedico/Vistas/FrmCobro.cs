@@ -56,14 +56,14 @@ namespace ConsultorioMedico.Vistas
             CbDoctor.DisplayMember = "Nombre";
             CbDoctor.ValueMember = "id";
             CbDoctor.DataSource = DUsuario.GetAllDoctores().Tables[0];
-            using(var db = new ConsultorioMedicoEntities())
-            {
-                var nPacientes = db.Paciente.ToList();
-              AutoCompleteStringCollection ac = new AutoCompleteStringCollection();
-                foreach (Paciente p in nPacientes as List<Paciente>)
-                    ac.Add(p.Nombre);
-                txtnombre.AutoCompleteCustomSource = ac;
-            }
+            //using(var db = new ConsultorioMedicoEntities())
+            //{
+            //    var nPacientes = db.Paciente.ToList();
+            //  AutoCompleteStringCollection ac = new AutoCompleteStringCollection();
+            //    foreach (Paciente p in nPacientes as List<Paciente>)
+            //        ac.Add(p.Nombre);
+            //    txtnombre.AutoCompleteCustomSource = ac;
+            //}
             
 
             //Fuente();
@@ -176,8 +176,7 @@ namespace ConsultorioMedico.Vistas
                 {
                     DetalleCobro odetcobro = new DetalleCobro();
 
-                    odetcobro.id_cobranza = oCobro.id;
-                    odetcobro.id_medicamento = int.Parse(dr.Cells[1].Value.ToString());
+                    odetcobro.id_cobranza = oCobro.id;           
                     odetcobro.Importe = double.Parse(dr.Cells[3].Value.ToString());
                     odetcobro.Cantidad = int.Parse(dr.Cells[4].Value.ToString());
                     odetcobro.Subtotal = double.Parse(dr.Cells[5].Value.ToString()); 

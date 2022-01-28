@@ -12,22 +12,21 @@ namespace ConsultorioMedico.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class Medicamento
+    public partial class Producto
     {
-        public int Id { get; set; }
+        public int IdProducto { get; set; }
+        public string Codigo { get; set; }
         public string Nombre { get; set; }
-        public string Compuesto { get; set; }
-        public string Presentacion { get; set; }
-        public string Gramaje { get; set; }
         public string Descripcion { get; set; }
-        public string Laboratorio { get; set; }
-        public double Precio { get; set; }
-        public Nullable<System.DateTime> FechaCompra { get; set; }
-        public double Costo { get; set; }
-        public string Lote { get; set; }
-        public string Caducidad { get; set; }
+        public int IdCategoria { get; set; }
+        public Nullable<double> PrecioUnitario { get; set; }
+        public Nullable<double> PrecioVenta { get; set; }
+        public Nullable<decimal> Dia { get; set; }
+        public Nullable<decimal> Noche { get; set; }
+        public Nullable<bool> Activo { get; set; }
+        public Nullable<System.DateTime> FechaRegistro { get; set; }
         public Nullable<int> Stock { get; set; }
-        public Nullable<decimal> CodigoBarra { get; set; }
-        public Nullable<int> idCategoria { get; set; }
+    
+        public virtual Categoria Categoria { get; set; }
     }
 }

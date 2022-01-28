@@ -131,6 +131,12 @@
     <Compile Include="Datos\DbHelper.cs" />
     <Compile Include="Datos\DLogin.cs" />
     <Compile Include="Datos\DUsuario.cs" />
+    <Compile Include="Entidades\Categoria.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\citas.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Cobranza.cs">
       <DependentUpon>Db.tt</DependentUpon>
     </Compile>
@@ -168,11 +174,26 @@
     <Compile Include="Entidades\Medicamento.cs">
       <DependentUpon>Db.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\modulo.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\NUsuario.cs" />
+    <Compile Include="Entidades\operaciones.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Paciente.cs">
       <DependentUpon>Db.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\Producto.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Proveedor.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\rol.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\rol_operacion.cs">
       <DependentUpon>Db.tt</DependentUpon>
     </Compile>
     <Compile Include="Entidades\sConsultas.cs" />
@@ -181,6 +202,16 @@
     </Compile>
     <Compile Include="Entidades\sMedicamento.cs" />
     <Compile Include="Entidades\sPaciente.cs" />
+    <Compile Include="Entidades\sTomasignos.cs" />
+    <Compile Include="Entidades\Tomasignos.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\tPerfiles.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\tRegla.cs">
+      <DependentUpon>Db.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Turnos.cs">
       <DependentUpon>Db.tt</DependentUpon>
     </Compile>
@@ -239,10 +270,10 @@
     <Compile Include="Vistas\FrmTomaSignos.Designer.cs">
       <DependentUpon>FrmTomaSignos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\MDIPrincipal.cs">
+    <Compile Include="MDIPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\MDIPrincipal.Designer.cs">
+    <Compile Include="MDIPrincipal.Designer.cs">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Medicamentos.cs">
@@ -291,7 +322,7 @@
     <EmbeddedResource Include="Vistas\FrmTomaSignos.resx">
       <DependentUpon>FrmTomaSignos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\MDIPrincipal.resx">
+    <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Medicamentos.resx">
@@ -339,8 +370,10 @@
     <Content Include="Imagenes\atnmed.png" />
     <Content Include="Imagenes\CMR.JPG" />
     <Content Include="Imagenes\icono-cliente.png" />
+    <Content Include="Imagenes\logoCMR.ico" />
     <Content Include="Imagenes\logoCMR.png" />
     <Content Include="Imagenes\LogoGCT.png" />
+    <Content Include="Imagenes\UAGro1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

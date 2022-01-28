@@ -59,13 +59,15 @@ namespace ConsultorioMedico.Vistas
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.btnSalir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPresion
             // 
-            this.txtPresion.Location = new System.Drawing.Point(273, 241);
+            this.txtPresion.Location = new System.Drawing.Point(273, 257);
             this.txtPresion.Name = "txtPresion";
             this.txtPresion.Size = new System.Drawing.Size(83, 20);
             this.txtPresion.TabIndex = 180;
@@ -73,7 +75,7 @@ namespace ConsultorioMedico.Vistas
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(149, 244);
+            this.label13.Location = new System.Drawing.Point(149, 260);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(29, 13);
             this.label13.TabIndex = 179;
@@ -81,7 +83,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtPbDx
             // 
-            this.txtPbDx.Location = new System.Drawing.Point(273, 399);
+            this.txtPbDx.Location = new System.Drawing.Point(273, 415);
             this.txtPbDx.Name = "txtPbDx";
             this.txtPbDx.Size = new System.Drawing.Size(317, 20);
             this.txtPbDx.TabIndex = 178;
@@ -89,7 +91,7 @@ namespace ConsultorioMedico.Vistas
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(149, 402);
+            this.label11.Location = new System.Drawing.Point(149, 418);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(36, 13);
             this.label11.TabIndex = 177;
@@ -97,7 +99,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtAlergias
             // 
-            this.txtAlergias.Location = new System.Drawing.Point(273, 373);
+            this.txtAlergias.Location = new System.Drawing.Point(273, 389);
             this.txtAlergias.Name = "txtAlergias";
             this.txtAlergias.Size = new System.Drawing.Size(317, 20);
             this.txtAlergias.TabIndex = 176;
@@ -105,7 +107,7 @@ namespace ConsultorioMedico.Vistas
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(149, 376);
+            this.label10.Location = new System.Drawing.Point(149, 392);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 13);
             this.label10.TabIndex = 175;
@@ -113,7 +115,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtTemp
             // 
-            this.txtTemp.Location = new System.Drawing.Point(273, 347);
+            this.txtTemp.Location = new System.Drawing.Point(273, 363);
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(83, 20);
             this.txtTemp.TabIndex = 174;
@@ -121,7 +123,7 @@ namespace ConsultorioMedico.Vistas
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(149, 350);
+            this.label9.Location = new System.Drawing.Point(149, 366);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 13);
             this.label9.TabIndex = 173;
@@ -129,7 +131,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtFreResp
             // 
-            this.txtFreResp.Location = new System.Drawing.Point(273, 321);
+            this.txtFreResp.Location = new System.Drawing.Point(273, 337);
             this.txtFreResp.Name = "txtFreResp";
             this.txtFreResp.Size = new System.Drawing.Size(83, 20);
             this.txtFreResp.TabIndex = 172;
@@ -137,7 +139,7 @@ namespace ConsultorioMedico.Vistas
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(149, 324);
+            this.label8.Location = new System.Drawing.Point(149, 340);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 13);
             this.label8.TabIndex = 171;
@@ -145,7 +147,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtFreCard
             // 
-            this.txtFreCard.Location = new System.Drawing.Point(273, 295);
+            this.txtFreCard.Location = new System.Drawing.Point(273, 311);
             this.txtFreCard.Name = "txtFreCard";
             this.txtFreCard.Size = new System.Drawing.Size(83, 20);
             this.txtFreCard.TabIndex = 170;
@@ -153,7 +155,7 @@ namespace ConsultorioMedico.Vistas
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(149, 298);
+            this.label7.Location = new System.Drawing.Point(149, 314);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 13);
             this.label7.TabIndex = 169;
@@ -161,7 +163,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtPulso
             // 
-            this.txtPulso.Location = new System.Drawing.Point(273, 269);
+            this.txtPulso.Location = new System.Drawing.Point(273, 285);
             this.txtPulso.Name = "txtPulso";
             this.txtPulso.Size = new System.Drawing.Size(83, 20);
             this.txtPulso.TabIndex = 168;
@@ -169,7 +171,7 @@ namespace ConsultorioMedico.Vistas
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(149, 272);
+            this.label6.Location = new System.Drawing.Point(149, 288);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 13);
             this.label6.TabIndex = 167;
@@ -177,7 +179,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtTalla
             // 
-            this.txtTalla.Location = new System.Drawing.Point(273, 215);
+            this.txtTalla.Location = new System.Drawing.Point(273, 231);
             this.txtTalla.Name = "txtTalla";
             this.txtTalla.Size = new System.Drawing.Size(83, 20);
             this.txtTalla.TabIndex = 166;
@@ -185,7 +187,7 @@ namespace ConsultorioMedico.Vistas
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(149, 218);
+            this.label5.Location = new System.Drawing.Point(149, 234);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 165;
@@ -193,7 +195,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtPeso
             // 
-            this.txtPeso.Location = new System.Drawing.Point(273, 189);
+            this.txtPeso.Location = new System.Drawing.Point(273, 205);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(83, 20);
             this.txtPeso.TabIndex = 164;
@@ -201,7 +203,7 @@ namespace ConsultorioMedico.Vistas
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(149, 192);
+            this.label3.Location = new System.Drawing.Point(149, 208);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 163;
@@ -209,7 +211,7 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(273, 163);
+            this.txtEdad.Location = new System.Drawing.Point(273, 179);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(83, 20);
             this.txtEdad.TabIndex = 162;
@@ -217,7 +219,7 @@ namespace ConsultorioMedico.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(149, 166);
+            this.label2.Location = new System.Drawing.Point(149, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 161;
@@ -225,7 +227,9 @@ namespace ConsultorioMedico.Vistas
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(273, 137);
+            this.txtnombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtnombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtnombre.Location = new System.Drawing.Point(273, 153);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(317, 20);
             this.txtnombre.TabIndex = 160;
@@ -233,7 +237,7 @@ namespace ConsultorioMedico.Vistas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(149, 140);
+            this.label1.Location = new System.Drawing.Point(149, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 13);
             this.label1.TabIndex = 159;
@@ -284,6 +288,7 @@ namespace ConsultorioMedico.Vistas
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btngrddatos
             // 
@@ -301,6 +306,7 @@ namespace ConsultorioMedico.Vistas
             this.btngrddatos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngrddatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btngrddatos.UseVisualStyleBackColor = true;
+            this.btngrddatos.Click += new System.EventHandler(this.btngrddatos_Click);
             // 
             // btnBuscar
             // 
@@ -333,12 +339,31 @@ namespace ConsultorioMedico.Vistas
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(149, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 182;
+            this.label4.Text = "Fecha:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(275, 125);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 183;
             // 
             // FrmTomaSignos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 450);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtPresion);
             this.Controls.Add(this.label13);
@@ -363,6 +388,7 @@ namespace ConsultorioMedico.Vistas
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label1);
             this.Name = "FrmTomaSignos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTomaSignos";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -402,5 +428,7 @@ namespace ConsultorioMedico.Vistas
         private FontAwesome.Sharp.IconButton btnBuscar;
         private System.Windows.Forms.Button btnSalir;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

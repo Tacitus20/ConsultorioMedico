@@ -12,13 +12,18 @@ namespace ConsultorioMedico.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class Servicios
+    public partial class modulo
     {
-        public int idServicio { get; set; }
-        public Nullable<decimal> codigoBarra { get; set; }
-        public string servicio { get; set; }
-        public string descripcion { get; set; }
-        public Nullable<decimal> dia { get; set; }
-        public Nullable<decimal> noche { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public modulo()
+        {
+            this.operaciones = new HashSet<operaciones>();
+        }
+    
+        public int id { get; set; }
+        public string nombre { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<operaciones> operaciones { get; set; }
     }
 }

@@ -83,7 +83,8 @@ namespace ConsultorioMedico.Vistas
              
                 
                 this.Hide();
-                FrmPrincipal ObjFP = new FrmPrincipal();
+                //FrmPrincipal ObjFP = new FrmPrincipal();
+                MDIPrincipal ObjFP = new MDIPrincipal();
                 ObjFP.Show();
                 
             }

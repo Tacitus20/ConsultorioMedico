@@ -16,12 +16,10 @@ namespace ConsultorioMedico.Entidades
     {
         public int id { get; set; }
         public int id_cobranza { get; set; }
-        public int id_medicamento { get; set; }
         public double Importe { get; set; }
         public int Cantidad { get; set; }
         public double Subtotal { get; set; }
     
         public virtual Cobranza Cobranza { get; set; }
-        public virtual Medicamento Medicamento { get; set; }
     }
 }

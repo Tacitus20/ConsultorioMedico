@@ -108,5 +108,17 @@ namespace ConsultorioMedico.Vistas
         {
            Application.Exit();
         }
+
+        private void editMenu_Click(object sender, EventArgs e)
+        {
+          Vistas.FrmTomaSignos frm = new Vistas.FrmTomaSignos();
+            frm.Show();
+        }
+
+        private void viewMenu_Click(object sender, EventArgs e)
+        {
+            Vistas.FrmConsultas frm = new Vistas.FrmConsultas();
+            frm.Show();
+        }
     }
 }

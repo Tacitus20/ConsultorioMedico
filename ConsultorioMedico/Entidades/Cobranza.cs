@@ -29,9 +29,9 @@ namespace ConsultorioMedico.Entidades
         public string TotalenLetra { get; set; }
         public int id_usuario { get; set; }
         public int StatusCancel { get; set; }
-        public int id_paciente { get; set; }
+        public Nullable<int> id_paciente { get; set; }
         public Nullable<int> Folio { get; set; }
-        public int id_doctor { get; set; }
+        public Nullable<int> id_doctor { get; set; }
     
         public virtual Doctores Doctores { get; set; }
         public virtual Paciente Paciente { get; set; }

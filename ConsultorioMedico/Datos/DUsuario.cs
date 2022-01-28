@@ -59,6 +59,17 @@ namespace ConsultorioMedico.Datos
         }
 
 
+        public static DataSet getTomasignos(string nombre, DateTime fecha)
+        {
+            SqlParameter[] dbParams = new SqlParameter[]
+                {
+                    DbHelper.MakeParam("@nombre", SqlDbType.VarChar, 0, nombre),
+                     DbHelper.MakeParam("@fecha", SqlDbType.DateTime, 0, fecha),
+                };
+            return DbHelper.ExecuteDataSet("sp_traetoma", dbParams);
+        }
+
+
         public static int EliminarMedicamento(sMedicamento med)
         {
             SqlParameter[] dbParams = new SqlParameter[]
@@ -88,6 +99,13 @@ namespace ConsultorioMedico.Datos
              };
             return Convert.ToInt32(DbHelper.ExecuteScalar("sp_traer_folioventa", dbParams));
         }
-        
+        public static int TraerFolioconsulta()
+        {
+            SqlParameter[] dbParams = new SqlParameter[]
+            {
+                
+             };
+            return Convert.ToInt32(DbHelper.ExecuteScalar("sp_traer_folioConsulta", dbParams));
+        }
     }
 }

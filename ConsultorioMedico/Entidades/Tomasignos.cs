@@ -12,10 +12,20 @@ namespace ConsultorioMedico.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class FoliosConsultas
+    public partial class Tomasignos
     {
-        public int idfolio { get; set; }
-        public double folio { get; set; }
+        public int id { get; set; }
+        public string nombre { get; set; }
         public Nullable<System.DateTime> fecha { get; set; }
+        public Nullable<int> edad { get; set; }
+        public Nullable<decimal> peso { get; set; }
+        public Nullable<int> talla { get; set; }
+        public string tensionArterial { get; set; }
+        public Nullable<int> pulso { get; set; }
+        public Nullable<int> fCardiaca { get; set; }
+        public Nullable<int> frespiratoria { get; set; }
+        public Nullable<decimal> temperatura { get; set; }
+        public string alergias { get; set; }
+        public string pbdx { get; set; }
     }
 }

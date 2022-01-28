@@ -12,13 +12,17 @@ namespace ConsultorioMedico.Entidades
     using System;
     using System.Collections.Generic;
     
-    public partial class Servicios
+    public partial class Proveedor
     {
-        public int idServicio { get; set; }
-        public Nullable<decimal> codigoBarra { get; set; }
-        public string servicio { get; set; }
-        public string descripcion { get; set; }
-        public Nullable<decimal> dia { get; set; }
-        public Nullable<decimal> noche { get; set; }
+        public int id { get; set; }
+        public string Nombre { get; set; }
+        public string Domicilio { get; set; }
+        public string CodigoPostal { get; set; }
+        public string Colonia { get; set; }
+        public string Telefono { get; set; }
+        public string Movil { get; set; }
+        public string Contacto { get; set; }
+        public string Email { get; set; }
+        public string activo { get; set; }
     }
 }

@@ -19,13 +19,13 @@ namespace ConsultorioMedico.Entidades
         public int id_paciente { get; set; }
         public System.DateTime fecha { get; set; }
         public Nullable<int> Edad { get; set; }
-        public Nullable<int> Peso { get; set; }
+        public Nullable<decimal> Peso { get; set; }
         public Nullable<double> Talla { get; set; }
         public string TenArt { get; set; }
         public Nullable<int> Pulso { get; set; }
         public Nullable<int> FreCardiaca { get; set; }
         public Nullable<int> FrecResp { get; set; }
-        public Nullable<int> Temperatura { get; set; }
+        public Nullable<decimal> Temperatura { get; set; }
         public string Alergias { get; set; }
         public string PbDx { get; set; }
         public string Medicamentos { get; set; }

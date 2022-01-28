@@ -86,11 +86,12 @@
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnImprimir);
             this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Location = new System.Drawing.Point(13, 1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(878, 115);
+            this.groupBox1.Size = new System.Drawing.Size(916, 115);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
@@ -147,7 +148,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -451,11 +452,11 @@
             // 
             this.chkMostra.AutoSize = true;
             this.chkMostra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMostra.Location = new System.Drawing.Point(47, 133);
+            this.chkMostra.Location = new System.Drawing.Point(123, 133);
             this.chkMostra.Name = "chkMostra";
-            this.chkMostra.Size = new System.Drawing.Size(151, 19);
+            this.chkMostra.Size = new System.Drawing.Size(91, 19);
             this.chkMostra.TabIndex = 134;
-            this.chkMostra.Text = "Venta de mostrador";
+            this.chkMostra.Text = "Mostrador";
             this.chkMostra.UseVisualStyleBackColor = true;
             // 
             // chkConsulta
@@ -464,9 +465,9 @@
             this.chkConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkConsulta.Location = new System.Drawing.Point(220, 133);
             this.chkConsulta.Name = "chkConsulta";
-            this.chkConsulta.Size = new System.Drawing.Size(145, 19);
+            this.chkConsulta.Size = new System.Drawing.Size(82, 19);
             this.chkConsulta.TabIndex = 135;
-            this.chkConsulta.Text = "Venta por consulta";
+            this.chkConsulta.Text = "Consulta";
             this.chkConsulta.UseVisualStyleBackColor = true;
             // 
             // txtCodigoBarra
@@ -490,11 +491,11 @@
             // 
             this.chkServ.AutoSize = true;
             this.chkServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkServ.Location = new System.Drawing.Point(396, 133);
+            this.chkServ.Location = new System.Drawing.Point(308, 133);
             this.chkServ.Name = "chkServ";
-            this.chkServ.Size = new System.Drawing.Size(147, 19);
+            this.chkServ.Size = new System.Drawing.Size(84, 19);
             this.chkServ.TabIndex = 138;
-            this.chkServ.Text = "Venta por servicios";
+            this.chkServ.Text = "Servicios";
             this.chkServ.UseVisualStyleBackColor = true;
             // 
             // FrmCobro
@@ -532,6 +533,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCobro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cobro";
             this.Load += new System.EventHandler(this.FrmCobro_Load);
             this.groupBox1.ResumeLayout(false);
